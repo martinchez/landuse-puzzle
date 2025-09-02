@@ -14,11 +14,23 @@ export interface Level {
   requiredStars: number;
 }
 
+export interface LevelStats {
+  attempts: number;
+  completions: number;
+  failedAttempts: number;
+  averageScore: number;
+  averageTimeSpent: number; // in seconds
+}
+
 export interface GameProgress {
   unlockedLevels: number;
   levelStars: { [levelId: number]: number };
   totalStars: number;
   badges: Badge[];
+  levelStatistics: { [levelId: number]: LevelStats };
+  mostPlayedLevelId?: number;
+  mostFailedLevelId?: number;
+  mostCompletedLevelId?: number;
 }
 
 export interface Badge {
@@ -31,7 +43,7 @@ export interface Badge {
 
 export type LandCoverType = 'forest' | 'water' | 'urban' | 'farmland' | 'desert';
 
-export type GameScreen = 'home' | 'levelSelect' | 'game' | 'results' | 'about';
+export type GameScreen = 'home' | 'levelSelect' | 'game' | 'results' | 'about' | 'statistics';
 
 export interface GameState {
   currentScreen: GameScreen;
