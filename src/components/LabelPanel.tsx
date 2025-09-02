@@ -42,7 +42,6 @@ export const LabelPanel: React.FC<LabelPanelProps> = ({ availableLabels, tiles }
             {/* Draggable label component */}
             <LandCoverLabel 
               type={labelType} 
-              isUsed={getUsedCount(labelType) >= getNeededCount(labelType)}  // Disable if all instances used
             />
             {/* Usage counter display */}
             <div className="text-xs text-gray-600 text-center mt-2">
