@@ -6,12 +6,14 @@ import { LAND_COVER_CONFIG } from '../utils/gameUtils';
 
 interface LandCoverLabelProps {
   type: LandCoverType;
+  isFullyClassified?: boolean;
 }
 
-export const LandCoverLabel: React.FC<LandCoverLabelProps> = ({ type }) => {
+export const LandCoverLabel: React.FC<LandCoverLabelProps> = ({ type, isFullyClassified = false }) => {
   const [{ isDragging }, drag] = useDrag(() => ({
     type: 'label',
     item: { labelType: type },
+    canDrag: true,
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),
@@ -23,7 +25,7 @@ export const LandCoverLabel: React.FC<LandCoverLabelProps> = ({ type }) => {
     <motion.div
       ref={drag}
       className={`
-        cursor-pointer select-none p-4 rounded-xl shadow-lg border-2 border-white
+        cursor-grab active:cursor-grabbing select-none p-4 rounded-xl shadow-lg border-2 border-white
         ${config.color} text-white font-bold text-center
         ${isDragging ? 'opacity-50' : 'opacity-100'}
         hover:scale-105
