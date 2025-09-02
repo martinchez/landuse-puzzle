@@ -7,6 +7,9 @@ import { AboutScreen } from './screens/AboutScreen';
 import { useGameState } from './hooks/useGameState';
 import { Level, Badge } from './types/game';
 import levelsData from './data/levels.json';
+import { DragProvider } from './contexts/DragContext';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 function App() {
   const { gameState, updateProgress, setScreen, setCurrentLevel } = useGameState();
@@ -170,4 +173,12 @@ function App() {
   return null;
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <DndProvider backend={HTML5Backend}>
+      <DragProvider>
+        <App />
+      </DragProvider>
+    </DndProvider>
+  );
+}

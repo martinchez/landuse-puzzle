@@ -16,11 +16,12 @@ export const GameGrid: React.FC<GameGridProps> = ({ tiles, gridSize, onTileDrop,
   return (
     // Grid container with responsive sizing and automatic gap between tiles
     <div 
-      className={`grid gap-2 max-w-2xl mx-auto`}
-      style={{ 
-        gridTemplateColumns: `repeat(${gridSize}, minmax(0, 1fr))`,  // Create dynamic grid columns based on gridSize
-      }}
-    >
+  className="grid gap-2 max-w-2xl mx-auto w-full place-items-center"
+  style={{ 
+    gridTemplateColumns: `repeat(${gridSize}, minmax(0, 1fr))`,
+  }}
+>
+
       {/* Map through tiles array to render individual GameTile components */}
       {tiles.map((tile) => (
         <GameTile
