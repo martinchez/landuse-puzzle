@@ -4,6 +4,7 @@ import { LevelSelectScreen } from './screens/LevelSelectScreen';
 import { GameScreen } from './screens/GameScreen';
 import { ResultsScreen } from './screens/ResultsScreen';
 import { AboutScreen } from './screens/AboutScreen';
+import { AdminScreen } from './screens/AdminScreen';
 import { useGameState } from './hooks/useGameState';
 import { Level, Badge } from './types/game';
 import levelsData from './data/levels.json';
@@ -114,6 +115,10 @@ function App() {
     setScreen('about');
   };
 
+  const handleAdmin = () => {
+    setScreen('admin');
+  };
+
   if (gameState.currentScreen === 'home') {
     return (
       <HomeScreen
@@ -168,6 +173,15 @@ function App() {
 
   if (gameState.currentScreen === 'about') {
     return <AboutScreen onBack={handleHome} />;
+  }
+
+  if (gameState.currentScreen === 'admin') {
+    return (
+      <AdminScreen
+        onBack={handleHome}
+        gameProgress={gameState.gameProgress}
+      />
+    );
   }
 
   return null;

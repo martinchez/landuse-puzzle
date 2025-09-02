@@ -43,7 +43,7 @@ export interface Badge {
 
 export type LandCoverType = 'forest' | 'water' | 'urban' | 'farmland' | 'desert';
 
-export type GameScreen = 'home' | 'levelSelect' | 'game' | 'results' | 'about' | 'statistics';
+export type GameScreen = 'home' | 'levelSelect' | 'game' | 'results' | 'about' | 'statistics' | 'admin';
 
 export interface GameState {
   currentScreen: GameScreen;
