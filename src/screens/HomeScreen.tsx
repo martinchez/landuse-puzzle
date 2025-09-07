@@ -1,23 +1,76 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Play, Info, Star } from 'lucide-react';
+import { Play, Info, Star, Settings, UserX } from 'lucide-react';
 import { GameProgress } from '../types/game';
+
+interface User {
+  id: string;
+  user_id: string;
+  username: string;
+  display_name: string;
+  age?: number;
+  school?: string;
+  laptop_id: string;
+  session_start: string;
+  user_type: string;
+  created_at: string;
+  last_active: string;
+}
 
 interface HomeScreenProps {
   onStartGame: () => void;
   onLevelSelect: () => void;
   onAbout: () => void;
+  onAdmin?: () => void;
+  onSwitchUser?: () => void;
   gameProgress: GameProgress;
+  currentUser?: User | null;
 }
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({ 
   onStartGame, 
   onLevelSelect, 
-  onAbout, 
-  gameProgress 
+  onAbout,
+  onAdmin,
+  onSwitchUser,
+  gameProgress,
+  currentUser
 }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center p-4">
+      {/* Admin Button - Top Right Corner */}
+      {onAdmin && (
+        <motion.button
+          onClick={onAdmin}
+          className="absolute top-4 right-4 p-3 bg-black bg-opacity-20 hover:bg-opacity-30 rounded-lg text-white transition-all"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          title="Admin Panel"
+        >
+          <Settings className="w-5 h-5" />
+        </motion.button>
+      )}
+
+      {/* User Info - Top Left Corner */}
+      {currentUser && (
+        <div className="absolute top-4 left-4 bg-black bg-opacity-20 rounded-lg p-3 text-white">
+          <div className="text-sm font-medium">👋 Hi, {currentUser.display_name}!</div>
+          {currentUser.school && (
+            <div className="text-xs opacity-75">{currentUser.school}</div>
+          )}
+          {onSwitchUser && (
+            <motion.button
+              onClick={onSwitchUser}
+              className="mt-2 text-xs bg-white bg-opacity-20 hover:bg-opacity-30 px-2 py-1 rounded transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Switch User
+            </motion.button>
+          )}
+        </div>
+      )}
+      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

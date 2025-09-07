@@ -1,7 +1,7 @@
 // Import necessary dependencies
 import React from 'react';
 import { motion } from 'framer-motion';  // For animations
-import { Star, Lightbulb, Home } from 'lucide-react';  // Icons
+import { Star, Lightbulb, Home, RotateCcw, Shuffle } from 'lucide-react';  // Icons
 
 // Define props interface for GameHeader component
 interface GameHeaderProps {
@@ -11,6 +11,8 @@ interface GameHeaderProps {
   correctAnswers: number;  // Number of correctly classified tiles
   onHint: () => void;      // Callback for hint button click
   onHome: () => void;      // Callback for home button click
+  onRetry?: () => void;    // Callback for retry button click
+  onRandomizeImages?: () => void; // Callback for randomize images button click
   hintsUsed: number;       // Number of hints already used
 }
 
@@ -21,6 +23,8 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
   correctAnswers, 
   onHint, 
   onHome,
+  onRetry,
+  onRandomizeImages,
   hintsUsed 
 }) => {
   // Calculate progress percentage
@@ -36,14 +40,39 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
           <button
             onClick={onHome}
             className="p-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+            title="Go to Home"
           >
             <Home className="w-5 h-5" />
           </button>
           <h2 className="text-2xl font-bold text-gray-800">{levelTitle}</h2>
         </div>
         
-        {/* Right side - Hint button and stars */}
+        {/* Right side - Controls and stars */}
         <div className="flex items-center space-x-4">
+          {/* Randomize Images button */}
+          {onRandomizeImages && (
+            <button
+              onClick={onRandomizeImages}
+              className="flex items-center space-x-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors"
+              title="Randomize Images"
+            >
+              <Shuffle className="w-4 h-4" />
+              <span>Mix Images</span>
+            </button>
+          )}
+          
+          {/* Retry button */}
+          {onRetry && (
+            <button
+              onClick={onRetry}
+              className="flex items-center space-x-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-colors"
+              title="Restart Level"
+            >
+              <RotateCcw className="w-4 h-4" />
+              <span>Retry</span>
+            </button>
+          )}
+          
           {/* Hint button with remaining hints counter */}
           <button
             onClick={onHint}

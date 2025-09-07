@@ -22,21 +22,9 @@ export const getInitialProgress = (): GameProgress => ({
   unlockedLevels: 1,
   levelStars: {},
   totalStars: 0,
-  badges: [...INITIAL_BADGES]
+  badges: [...INITIAL_BADGES],
+  levelStatistics: {}
 });
-
-export const loadProgress = (): GameProgress => {
-  try {
-    const saved = localStorage.getItem('landCoverGameProgress');
-    return saved ? JSON.parse(saved) : getInitialProgress();
-  } catch {
-    return getInitialProgress();
-  }
-};
-
-export const saveProgress = (progress: GameProgress): void => {
-  localStorage.setItem('landCoverGameProgress', JSON.stringify(progress));
-};
 
 export const calculateStars = (correctAnswers: number, totalTiles: number): number => {
   const percentage = (correctAnswers / totalTiles) * 100;
@@ -47,38 +35,72 @@ export const calculateStars = (correctAnswers: number, totalTiles: number): numb
 };
 
 export const playSound = (type: 'success' | 'error' | 'complete') => {
-  // Web Audio API implementation for sound effects
-  const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-  
-  const playTone = (frequency: number, duration: number, type: OscillatorType = 'sine') => {
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
-    
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
-    
-    oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
-    oscillator.type = type;
-    
-    gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
-    
-    oscillator.start();
-    oscillator.stop(audioContext.currentTime + duration);
-  };
+  try {
+    // Check if Web Audio API is supported
+    if (!window.AudioContext && !(window as any).webkitAudioContext) {
+      console.warn('Web Audio API not supported');
+      return;
+    }
 
-  switch (type) {
-    case 'success':
-      playTone(523.25, 0.2); // C5
-      setTimeout(() => playTone(659.25, 0.3), 100); // E5
-      break;
-    case 'error':
-      playTone(207.65, 0.5); // G#3
-      break;
-    case 'complete':
-      playTone(523.25, 0.2); // C5
-      setTimeout(() => playTone(659.25, 0.2), 100); // E5
-      setTimeout(() => playTone(783.99, 0.4), 200); // G5
-      break;
+    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+    
+    const playTone = (frequency: number, duration: number, type: OscillatorType = 'sine') => {
+      try {
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+        oscillator.type = type;
+        
+        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+        
+        oscillator.start();
+        oscillator.stop(audioContext.currentTime + duration);
+      } catch (error) {
+        console.warn('Failed to play tone:', error);
+      }
+    };
+
+    switch (type) {
+      case 'success':
+        playTone(523.25, 0.2); // C5
+        setTimeout(() => playTone(659.25, 0.3), 100); // E5
+        break;
+      case 'error':
+        playTone(207.65, 0.5); // G#3
+        break;
+      case 'complete':
+        playTone(523.25, 0.2); // C5
+        setTimeout(() => playTone(659.25, 0.2), 100); // E5
+        setTimeout(() => playTone(783.99, 0.4), 200); // G5
+        break;
+    }
+  } catch (error) {
+    console.warn('Failed to initialize audio context:', error);
   }
+};
+
+// Error handling utilities
+export const handleError = (error: unknown, context: string): string => {
+  const message = error instanceof Error ? error.message : 'An unknown error occurred';
+  console.error(`Error in ${context}:`, error);
+  return message;
+};
+
+export const withErrorHandling = <T extends (...args: any[]) => any>(
+  fn: T,
+  fallback?: ReturnType<T>
+): T => {
+  return ((...args: Parameters<T>) => {
+    try {
+      return fn(...args);
+    } catch (error) {
+      console.error('Error in wrapped function:', error);
+      return fallback;
+    }
+  }) as T;
 };

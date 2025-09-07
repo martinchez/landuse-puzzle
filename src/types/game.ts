@@ -49,4 +49,12 @@ export interface GameState {
   currentScreen: GameScreen;
   currentLevel: number;
   gameProgress: GameProgress;
+  error?: string;
+  isLoading?: boolean;
+}
+
+export interface GameError {
+  message: string;
+  code?: string;
+  timestamp: number;
 }
