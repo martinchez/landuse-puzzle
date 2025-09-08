@@ -6,15 +6,15 @@
     "requiredStars": 0,
     "availableLabels": ["forest", "water"],
     "tiles": [
-      { "id": "1-1", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "1-1", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "1-2", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "1-3", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "1-4", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1439061/pexels-photo-1439061.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "1-5", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "1-5", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "1-6", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "1-7", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1578662/pexels-photo-1578662.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "1-7", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "1-8", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1033729/pexels-photo-1033729.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "1-9", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1910225/pexels-photo-1910225.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" }
+      { "id": "1-9", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1563604/pexels-photo-1563604.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" }
     ]
   },
   {
@@ -25,13 +25,13 @@
     "availableLabels": ["forest", "water", "urban"],
     "tiles": [
       { "id": "2-1", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "2-2", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/518803/pexels-photo-518803.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "2-2", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1008739/pexels-photo-1008739.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "2-3", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "2-4", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "2-5", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "2-6", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "2-7", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1439061/pexels-photo-1439061.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "2-8", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "2-8", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/572937/pexels-photo-572937.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "2-9", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1534451/pexels-photo-1534451.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" }
     ]
   },
@@ -43,7 +43,7 @@
     "availableLabels": ["forest", "water", "urban", "farmland"],
     "tiles": [
       { "id": "3-1", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "3-2", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/518803/pexels-photo-518803.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "3-2", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1271620/pexels-photo-1271620.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-3", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-4", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-5", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/1595108/pexels-photo-1595108.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
@@ -52,12 +52,12 @@
       { "id": "3-8", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-9", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1439061/pexels-photo-1439061.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-10", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "3-11", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "3-11", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/574190/pexels-photo-574190.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-12", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-13", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1033729/pexels-photo-1033729.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-14", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/1595108/pexels-photo-1595108.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "3-15", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1534451/pexels-photo-1534451.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "3-16", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1910225/pexels-photo-1910225.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" }
+      { "id": "3-16", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/2696134/pexels-photo-2696134.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" }
     ]
   },
   {
@@ -72,7 +72,7 @@
       { "id": "4-3", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "4-4", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "4-5", "correctLabel": "desert", "imageUrl": "https://images.pexels.com/photos/1028225/pexels-photo-1028225.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "4-6", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/518803/pexels-photo-518803.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "4-6", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "4-7", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/1595108/pexels-photo-1595108.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "4-8", "correctLabel": "desert", "imageUrl": "https://images.pexels.com/photos/1906795/pexels-photo-1906795.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "4-9", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
@@ -92,7 +92,7 @@
     "requiredStars": 12,
     "availableLabels": ["forest", "water", "urban", "farmland", "desert"],
     "tiles": [
-      { "id": "5-1", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/518803/pexels-photo-518803.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "5-1", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-2", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-3", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-4", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
@@ -102,17 +102,17 @@
       { "id": "5-8", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-9", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/1595108/pexels-photo-1595108.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-10", "correctLabel": "desert", "imageUrl": "https://images.pexels.com/photos/1028225/pexels-photo-1028225.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "5-11", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "5-11", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-12", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1033729/pexels-photo-1033729.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-13", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-14", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/2183508/pexels-photo-2183508.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-15", "correctLabel": "desert", "imageUrl": "https://images.pexels.com/photos/1906795/pexels-photo-1906795.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "5-16", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1910225/pexels-photo-1910225.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "5-16", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1563604/pexels-photo-1563604.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-17", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-18", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/1534451/pexels-photo-1534451.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-19", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-20", "correctLabel": "desert", "imageUrl": "https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
-      { "id": "5-21", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1578662/pexels-photo-1578662.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
+      { "id": "5-21", "correctLabel": "forest", "imageUrl": "https://images.pexels.com/photos/1008739/pexels-photo-1008739.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-22", "correctLabel": "water", "imageUrl": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-23", "correctLabel": "urban", "imageUrl": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
       { "id": "5-24", "correctLabel": "farmland", "imageUrl": "https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" },
